@@ -1,0 +1,43 @@
+body {
+	transform: perspective(200px);
+	transform-style: preserve-3d;
+}
+
+#box {
+	position: relative;
+	top: 40px;
+	width: 500px;
+	height: 400px;
+	background-color: #afd3ef;
+	border: 3px solid #032e4f;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#bird {
+	position: absolute;
+	left: 170px;
+	top: 90px;
+	border: 2px solid #000;
+
+	/*transform: scale(.1);*/
+
+   /* transform: rotate(45deg);
+    transform-origin: 100% 50%;*/
+
+    transform: rotateX(45deg) rotateY(45deg);
+
+	transition: all 1s;
+}
+
+#box:hover #bird {
+  /*  -webkit-transform: translate(100px, -50px);
+    -ms-transform: translate(100px, -50px);
+    transform: translate(100px, -50px);*/
+
+   /* transform: rotate(-45deg);*/
+
+   /*transform: scale(1.5);*/
+
+    transform: rotateX(-45deg) rotateY(-45deg) scale(.5);
+}

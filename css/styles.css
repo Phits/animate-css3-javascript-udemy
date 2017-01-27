@@ -1,0 +1,21 @@
+
+#greeting {
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	color: #0000ff;
+	font-size: 50px;
+	margin: 0;
+	padding: 10px;
+	border: 2px solid black;
+
+	transition: font-size 1s,
+	    color 1s,
+	    left 1s
+}
+
+#greeting.myTransition {
+    font-size: 100px;
+    color: red;
+    left: 120px;
+}
