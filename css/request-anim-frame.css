@@ -1,0 +1,11 @@
+
+body {
+	background-color: #333333;
+}
+
+#myCanvas {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #ffffff;
+}
