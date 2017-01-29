@@ -1,0 +1,9 @@
+
+#heli {
+	position: absolute;
+	left: 100px;
+	top: 400px;
+	width: 300px;
+	background-color: blue;
+	/*display: none;*/
+}
