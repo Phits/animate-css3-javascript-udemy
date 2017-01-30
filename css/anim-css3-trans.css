@@ -1,14 +1,50 @@
 
-body {
-	perspective: 600px;
-	perspective-origin: 50% 200px;
+#container {
+	position: relative;
+	width: 300px;
+	margin: 50px auto 0 600px;
+	text-align: center;
+
+	-webkit-transform: perspective(400px);
+	-webkit-transform-style: preserve-3d;
 }
 
-.square {
-	position: absolute;
-	top: 100px;
-	left: 45%;
-	width: 150px;
-	height: 150px;
-	background-color: blue;
+#bird-container {
+     -webkit-animation: bird-motion 2s linear infinite normal both;
+    /*animation: bird-motion 2s ease-out 1 normal both;*/
+    -webkit-transform-origin: -50% 100%;
+    -webkit-transform-style: preserve-3d;
+    border: solid red 2px;
+}
+
+#bird {
+    -webkit-animation: bird-motion 2s ease-out 1 reverse both;
+    border: solid blue 1px;
+}
+
+/*@-webkit-keyframes bird-motion {
+	from {
+        -webkit-transform: translate(0,0) rotate(0) scale(.5);
+	}
+	to {
+        -webkit-transform: translate(0,250px) rotate(360deg) scale(1.5);
+	}
+}
+
+@keyframes bird-motion {
+	from {
+        -webkit-transform: translate(0,0) rotate(0) scale(.5);
+	}
+	to {
+        -webkit-transform: translate(0,250px) rotate(360deg) scale(1.5);
+	}
+}*/
+
+@-webkit-keyframes bird-motion {
+	from {
+        -webkit-transform: rotateY(0);
+	}
+	to {
+        -webkit-transform: rotateY(360deg);
+	}
 }
